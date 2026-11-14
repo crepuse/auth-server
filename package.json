@@ -1,0 +1,26 @@
+{
+    "name": "@crepuse/auth-server",
+    "version": "0.0.0",
+    "private": true,
+    "description": "Multi-tenant OIDC identity provider for crepuse",
+    "type": "module",
+    "license": "AGPL-3.0-only",
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "check": "tsc --noEmit",
+        "format": "prettier --write .",
+        "format:check": "prettier --check .",
+        "test": "npm run build && node --test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/crepuse/auth-server.git"
+    },
+    "dependencies": {
+        "@crepuse/runtime": "^0.1.0"
+    },
+    "devDependencies": {
+        "prettier": "^3.9.10",
+        "typescript": "^5.9.0"
+    }
+}
