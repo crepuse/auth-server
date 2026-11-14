@@ -26,9 +26,11 @@ CREATE TABLE oidc_tenant_profile_bindings (
 
     PRIMARY KEY (tenant_id, account_id),
 
-    FOREIGN KEY (tenant_id, account_id)
-        REFERENCES tenant_memberships(tenant_id, account_id)
-        ON DELETE CASCADE,
+    FOREIGN KEY (tenant_id)
+        REFERENCES tenants(id) ON DELETE CASCADE,
+
+    FOREIGN KEY (account_id)
+        REFERENCES accounts(id) ON DELETE CASCADE,
 
     FOREIGN KEY (profile_id)
         REFERENCES profiles(id) ON DELETE CASCADE
