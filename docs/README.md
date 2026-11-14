@@ -10,6 +10,10 @@ A multi-tenant OpenID Connect identity provider.
 - Per-client profile policies
 - Pairwise OIDC subjects
 
+## Reference
+
+- [Subject Resolver](subjects.md)
+
 ## Development
 
 See [the repository](https://github.com/crepuse/auth-server)
